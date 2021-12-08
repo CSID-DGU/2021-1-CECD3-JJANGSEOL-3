@@ -23,20 +23,14 @@
 ![](https://user-images.githubusercontent.com/46514182/122637283-b3c71d80-d128-11eb-8008-9dd314d7c161.png) |  <img width = 350 src = "https://user-images.githubusercontent.com/46514182/122637222-65b21a00-d128-11eb-9ab9-1463f3377399.png">
 
 ## 2. 개발 목적
-### 센서 데이터와 인공지능 딥러닝을 활용하여 독거노인의 우울 증상을 초기에 감지하여 심리적 외로움으로 인한 독거노인의 자살 및 고독사를 예방한다.
+### Swell Dataset의 심박 변이 데이터(HRV 데이터)를 활용하여, SVM을 통한 사용자의 스트레스 유무를 판단할 수 있는 시스템과 어플리케이션을 개발해 사용자에게 시각적으로 스트레스 유무를 알려준다.
 
-## 3. 개발도구 및 작동원리
-<b> 독거노인 응급안전안심서비스 차세대 댁내 장비 사용하여 센서데이터 수집 후 그래프로 시각화  </b>
+## 3. 작동원리
+<b> 안드로이드 앱에 저장된 HRV데이터를 서버로 전송하여 분류한 뒤 데이터를 전송받아 앱내의 데이터베이스에 저장후 그래프로 표시 </b>
 
-<img width = 600 src="https://user-images.githubusercontent.com/46514182/122636316-9ba0cf80-d123-11eb-9e25-d35dddcf3c12.png">
+<img width = 900 src="https://user-images.githubusercontent.com/81959099/145167689-813bdd88-3fec-4521-8d9c-fe7fd2292aeb.png">
 
-<b>우울 증상 조기 감지 CNN MODEL 생성 </b>
 
-<img width = 600 src="https://user-images.githubusercontent.com/46514182/122636788-09e69180-d126-11eb-9770-7168fed18dd0.png">
-
-<b>CNN MODEL 활용한 독거노인 행동 패턴 분석 </b>
-
-<img width = 600 src="https://user-images.githubusercontent.com/46514182/122636925-c6d8ee00-d126-11eb-8b2a-df3ab1efa809.png">
 
 ## 4. 개발환경
 <p>
@@ -48,20 +42,13 @@
 
 ## 5. 주요 기능
 * 사용자 맞춤형 UI 제공
-* 게이트웨이로 들어오는 센서 데이터 값을 수신 후 파싱
-* CNN 모델 학습용 그래프 생성
+* 119 응급전화 버튼
+* 스트레스 유무를 그래프로 표현
 
-## 6. 진행 사항
-1. 센서 데이터 Raw Data 분석
-<img width = 600 src="https://user-images.githubusercontent.com/46514182/122638957-36080f80-d132-11eb-97d5-3bcd4a28837f.png">
-<img width = 800 src="https://user-images.githubusercontent.com/46514182/122639176-5daba780-d133-11eb-881b-f39a90851c4c.png">
+## 6. UI
+1. 메인
+<img width = 900 src="https://user-images.githubusercontent.com/81959099/145168728-f4b64221-0f69-4585-a842-432d0cdea48b.png">
 
-2. 센서 데이터 Parsing 후 데이터베이스에 저장
-<img width = 400 src="https://user-images.githubusercontent.com/46514182/122637558-5633d080-d12a-11eb-90aa-71255240cb5e.png">
-</br>추후 서버에 Maria DB 설치후 Maria DB에 연동 예정
+2. 그래프
+<img width = 900 src="https://user-images.githubusercontent.com/81959099/145168807-6f2055fe-a633-4452-9589-e1dc43dbcde1.png">
 
-## 7. 향후 계획
-1. 센서 데이터 활용하여 대상자 생활 패턴 파악
-2. 대상자 모니터링을 위해 생활 패턴 데이터 시각화 - 그래프 생성
-3. 생활 패턴 그래프 활용하여 CNN 학습 모델 구축
-4. 구축된 CNN 모델 활용하여 대상자의 우울 증상 초기 감지
